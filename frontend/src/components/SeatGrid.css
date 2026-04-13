@@ -1,0 +1,12 @@
+.seat-grid {
+  display: grid;
+  gap: 6px;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.empty {
+  color: #666;
+  text-align: center;
+  padding: 40px 0;
+}

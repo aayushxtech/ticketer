@@ -1,0 +1,20 @@
+.card {
+  background: #1a1a1a;
+  border: 1px solid #262626;
+  border-radius: 6px;
+  padding: 20px;
+  width: 100%;
+  text-align: left;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.card--clickable {
+  cursor: pointer;
+  transition: background 0.15s;
+}
+
+.card--clickable:hover {
+  background: #2a2a2a;
+}

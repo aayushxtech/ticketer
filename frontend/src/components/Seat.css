@@ -1,0 +1,35 @@
+.seat {
+  width: 36px;
+  height: 36px;
+  border: 1px solid #333;
+  border-radius: 4px;
+  font-size: 11px;
+  font-family: inherit;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.1s;
+}
+
+.seat--available {
+  background: #2a2a2a;
+  color: #999;
+}
+
+.seat--available:hover {
+  background: #3a3a3a;
+}
+
+.seat--selected {
+  background: #e5e5e5;
+  color: #0f0f0f;
+  border-color: #e5e5e5;
+}
+
+.seat--booked {
+  background: #151515;
+  color: #444;
+  cursor: not-allowed;
+  border-color: #222;
+}

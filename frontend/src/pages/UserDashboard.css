@@ -1,0 +1,61 @@
+.dashboard {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.dashboard__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 32px;
+}
+
+.dashboard__header h1 {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.dashboard__subtitle {
+  color: #888;
+  font-size: 14px;
+  margin-top: 4px;
+}
+
+.dashboard__msg {
+  color: #888;
+  text-align: center;
+  padding: 40px 0;
+}
+
+.dashboard__msg--error {
+  color: #f87171;
+}
+
+.dashboard__grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.dashboard__link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.show-card__name {
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 4px;
+}
+
+.show-card__meta {
+  color: #888;
+  font-size: 13px;
+}
+
+.show-card__seats {
+  color: #aaa;
+  font-size: 13px;
+  margin-top: 6px;
+}
