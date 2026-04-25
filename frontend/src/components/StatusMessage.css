@@ -1,18 +1,40 @@
 .status {
-  padding: 10px 16px;
-  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-radius: var(--radius-sm);
   font-size: 14px;
+  font-weight: 500;
   margin: 12px 0;
+  animation: statusSlideIn 0.22s ease;
+}
+
+@keyframes statusSlideIn {
+  from { opacity: 0; transform: translateY(-6px); }
+  to   { opacity: 1; transform: translateY(0); }
 }
 
 .status--success {
-  background: rgba(74, 222, 128, 0.1);
-  color: #4ade80;
+  background: rgba(74, 222, 128, 0.08);
+  color: var(--green);
   border: 1px solid rgba(74, 222, 128, 0.2);
 }
 
+.status--success::before {
+  content: '✓';
+  font-weight: 700;
+  font-size: 13px;
+}
+
 .status--error {
-  background: rgba(248, 113, 113, 0.1);
-  color: #f87171;
+  background: rgba(248, 113, 113, 0.08);
+  color: var(--red);
   border: 1px solid rgba(248, 113, 113, 0.2);
+}
+
+.status--error::before {
+  content: '✕';
+  font-weight: 700;
+  font-size: 13px;
 }

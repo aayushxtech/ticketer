@@ -1,12 +1,39 @@
 .seat-grid {
   display: grid;
-  gap: 6px;
+  gap: 8px;
   justify-content: center;
-  padding: 20px 0;
+  padding: 24px 0 16px;
+}
+
+/* Stage / Screen indicator */
+.seat-grid-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.seat-grid__screen {
+  width: 60%;
+  max-width: 320px;
+  height: 6px;
+  background: linear-gradient(90deg, var(--accent), var(--accent-2));
+  border-radius: 100px;
+  opacity: 0.5;
+  box-shadow: 0 4px 20px rgba(167,139,250,0.3);
+}
+
+.seat-grid__screen-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  color: var(--muted-2);
+  margin-top: -8px;
 }
 
 .empty {
-  color: #666;
+  color: var(--muted);
   text-align: center;
-  padding: 40px 0;
+  padding: 48px 0;
+  font-size: 14px;
 }

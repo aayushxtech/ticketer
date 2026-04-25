@@ -110,5 +110,4 @@ This project is proof that balancing rapid velocity and rigorous systems design 
 
 ## 🔗 Contact & Links
 
-*   Author: [Your Name/Handle Here]
-*   Repository: [GitHub Link Here]
+*   Author: aayushxtech
